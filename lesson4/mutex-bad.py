@@ -4,9 +4,9 @@ class Mutex:
     @thread
     def t1(self):
         while True:
-            while self.locked == 'L':
+            while self.locked == '🔒':
                 pass
-            self.locked = 'L'
+            self.locked = '🔒'
             cs = True
             del cs
             self.locked = ''
@@ -14,9 +14,9 @@ class Mutex:
     @thread
     def t2(self):
         while True:
-            while self.locked == 'L':
+            while self.locked == '🔒':
                 pass
-            self.locked = 'L'
+            self.locked = '🔒'
             cs = True
             del cs
             self.locked = ''
